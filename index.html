@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO: Judul halaman -->
+    <title>KopiKu - Kedai Kopi Lokal Favorit</title>
+    <!-- SEO: Deskripsi singkat untuk search engine -->
+    <meta
+      name="description"
+      content="Nikmati kopi lokal berkualitas dan suasana nyaman hanya di KopiKu."
+    />
+    <!-- Open Graph Tags untuk media sosial -->
+    <meta property="og:title" content="KopiKu - Kedai Kopi Lokal Favorit" />
+    <meta
+      property="og:description"
+      content="Nikmati kopi lokal berkualitas dan suasana nyaman hanya di KopiKu."
+    />
+    <meta property="og:image" content="https://example.com/kopiku-banner.jpg" />
+    <meta property="og:url" content="https://kopiku.example.com" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Kopiku</h1>
+      <p>
+        Kedai kopi lokal dengan cita rasa nusantara dan tempat yang nyaman untuk
+        bersantai melewati hari harimu
+      </p>
+      <!-- Navigasi -->
+      <nav>
+        <ul>
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Reservasi</a></li>
+          <li><a href="">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Tentang Kami -->
+    <main>
+      <section id="tentangkami">
+        <article>
+          <h2>Tentang Kopiku</h2>
+          <img src="" alt="Gambarkedaikopiku" />
+          <p>
+            KopiKu adalah kedai kopi lokal yang menyajikan berbagai varian kopi
+            pilihan dengan suasana yang hangat dan nyaman untuk melewati hari
+            harimu. Kami percaya bahwa secangkir kopi bisa menjadi awal dari
+            hari yang luar biasa.
+          </p>
+        </article>
+      </section>
+
+      <!-- Formulir -->
+      <section id="formulir">
+        <h2>Formulir Reservasi & Preferensi</h2>
+
+        <form>
+          <!-- Nama Lengkap -->
+          <p>
+            <label for="nama">Nama Lengkap:</label><br />
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              required
+              minlength="3"
+              maxlength="50"
+              pattern="[A-Za-z\s]+"
+              title="Hanya huruf dan spasi diizinkan."
+            />
+            <br />
+            <small
+              >Masukkan nama lengkap Anda (huruf saja, min 3 karakter).</small
+            >
+          </p>
+
+          <!-- Email -->
+          <p>
+            <label for="email">Alamat Email:</label><br />
+            <input type="email" id="email" name="email" required />
+            <br />
+            <small>Masukkan email yang valid untuk menerima newsletter.</small>
+          </p>
+
+          <!-- Pilihan Tempat Duduk -->
+          <p>
+            <span>Pilihan Tempat Duduk:</span><br />
+            <input
+              type="radio"
+              id="indoor"
+              name="tempat_duduk"
+              value="Indoor"
+              required
+            />
+            <label for="indoor">Indoor</label><br />
+
+            <input
+              type="radio"
+              id="outdoor"
+              name="tempat_duduk"
+              value="Outdoor"
+              required
+            />
+            <label for="outdoor">Outdoor</label><br />
+          </p>
+
+          <!-- Permintaan Tambahan -->
+          <p>
+            <span>Permintaan Tambahan:</span><br />
+            <input
+              type="checkbox"
+              id="colokan"
+              name="permintaan[]"
+              value="Colokan Listrik"
+            />
+            <label for="colokan">Butuh colokan listrik</label><br />
+
+            <input
+              type="checkbox"
+              id="nonmerokok"
+              name="permintaan[]"
+              value="Area Non-Merokok"
+            />
+            <label for="nonmerokok">Area non-merokok</label><br />
+          </p>
+
+          <!-- Minuman Favorit -->
+          <p>
+            <label for="minuman">Jenis Minuman Favorit:</label><br />
+            <select id="minuman" name="minuman" required>
+              <option value="">-- Pilih minuman --</option>
+              <option value="kopi-hitam">Kopi Hitam</option>
+              <option value="latte">Latte</option>
+              <option value="espresso">Espresso</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="teh">Teh</option>
+            </select>
+          </p>
+
+          <!-- Catatan Tambahan -->
+          <p>
+            <label for="catatan">Catatan Tambahan:</label><br />
+            <textarea
+              id="catatan"
+              name="catatan"
+              rows="4"
+              cols="50"
+              maxlength="200"
+              placeholder="Tulis permintaan khusus di sini..."
+            ></textarea>
+          </p>
+
+          <!-- Tombol Kirim -->
+          <p>
+            <button type="submit">Kirim</button>
+          </p>
+        </form>
+      </section>
+
+      <!-- Kontak -->
+      <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <address>
+          <p>Alamat: Jl. Kenangan No. 42, Yogyakarta</p>
+          <p>
+            Email:
+            <a href="mailto:info@kopiku.example.com">info@kopiku.example.com</a>
+          </p>
+          <p>Telepon: 0812-3456-xxxx</p>
+        </address>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 KopiKu. Semua hak dilindungi.</p>
+    </footer>
+  </body>
+</html>
